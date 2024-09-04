@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jormilcar-web/static/css/main.09ebcf6a.css",
+    "main.js": "/jormilcar-web/static/js/main.7844e8c3.js",
+    "static/media/fa-solid-900.ttf": "/jormilcar-web/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/jormilcar-web/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/jormilcar-web/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/fa-brands-400.woff2": "/jormilcar-web/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/Logo-Blanco.png": "/jormilcar-web/static/media/Logo-Blanco.0f582c50bc7e0f18433b.png",
+    "static/media/fa-regular-400.ttf": "/jormilcar-web/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/fa-regular-400.woff2": "/jormilcar-web/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/jormilcar-web/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/jormilcar-web/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "index.html": "/jormilcar-web/index.html",
+    "main.09ebcf6a.css.map": "/jormilcar-web/static/css/main.09ebcf6a.css.map",
+    "main.7844e8c3.js.map": "/jormilcar-web/static/js/main.7844e8c3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09ebcf6a.css",
+    "static/js/main.7844e8c3.js"
+  ]
+}
