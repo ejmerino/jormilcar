@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../imgs/logo/Logo-Blanco.png'; // Asegúrate de que la ruta sea correcta
+import logo from '../imgs/logo/Logo-Blanco.png';
 
 const Header = () => {
   return (
@@ -13,7 +13,7 @@ const Header = () => {
           />
         </Link>
       </div>
-      <nav className="flex space-x-6">
+      <nav className="hidden md:flex space-x-6">
         <Link 
           to="/" 
           className="transition-transform duration-300 hover:scale-105 hover:text-red-500"
@@ -39,6 +39,12 @@ const Header = () => {
           Contactos
         </Link>
       </nav>
+      <div className="md:hidden">
+        {/* Icono de menú para dispositivos móviles */}
+        <button>
+          <i className="fas fa-bars text-xl"></i>
+        </button>
+      </div>
     </header>
   );
 };

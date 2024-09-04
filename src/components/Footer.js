@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         {/* Horarios de Atención */}
-        <div className="w-full md:w-1/3 mb-6 text-center">
+        <div className="w-full md:w-1/3 mb-6 text-center md:text-left">
           <h3 className="text-lg font-semibold mb-4">Horarios de Atención</h3>
           <p className="text-sm">Lunes a Viernes: 9:00 AM - 17:30 PM</p>
           <p className="text-sm">Sábados: 10:00 AM - 13:00 PM</p>
