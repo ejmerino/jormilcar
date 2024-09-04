@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-white p-8 font-roboto">
       <div className="container mx-auto flex flex-wrap justify-between items-start">
         {/* Información de Contacto */}
-        <div className="w-full md:w-1/3 mb-6">
+        <div className="w-full md:w-1/3 mb-6 md:mb-0">
           <div className="flex flex-col">
             <a 
               href="https://maps.app.goo.gl/REYtkZsy6WVoYrG48" 
@@ -52,14 +52,14 @@ const Footer = () => {
         </div>
 
         {/* Horarios de Atención */}
-        <div className="w-full md:w-1/3 mb-6 text-center md:text-left">
+        <div className="w-full md:w-1/3 mb-6 md:mb-0 text-center">
           <h3 className="text-lg font-semibold mb-4">Horarios de Atención</h3>
           <p className="text-sm">Lunes a Viernes: 9:00 AM - 17:30 PM</p>
           <p className="text-sm">Sábados: 10:00 AM - 13:00 PM</p>
         </div>
 
         {/* Redes Sociales */}
-        <div className="w-full md:w-1/3 mb-6 flex justify-end">
+        <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-end">
           <div className="flex flex-col items-end">
             <h3 className="text-lg font-semibold mb-4">Síguenos</h3>
             <div className="flex space-x-4">
