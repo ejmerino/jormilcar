@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../imgs/logo/Logo-Blanco.png';
+import logo from './imgs/logo/Logo-Blanco.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,8 +28,8 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Navegación */}
-      <nav className={`absolute top-16 left-0 w-full bg-black p-4 rounded-lg shadow-lg transition-transform duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+      {/* Navegación hamburguesa para móviles */}
+      <nav className={`absolute top-16 left-0 w-full bg-black p-4 rounded-lg shadow-lg transition-transform duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'} md:hidden`}>
         <ul className="space-y-4">
           <li>
             <Link 
@@ -68,6 +68,34 @@ const Header = () => {
             </Link>
           </li>
         </ul>
+      </nav>
+
+      {/* Navegación normal para pantallas medianas y grandes */}
+      <nav className="hidden md:flex space-x-8">
+        <Link 
+          to="/" 
+          className="transition-transform duration-300 hover:scale-105 hover:text-red-500"
+        >
+          Inicio
+        </Link>
+        <Link 
+          to="/about" 
+          className="transition-transform duration-300 hover:scale-105 hover:text-red-500"
+        >
+          ¿Quiénes somos?
+        </Link>
+        <Link 
+          to="/services" 
+          className="transition-transform duration-300 hover:scale-105 hover:text-red-500"
+        >
+          Vender
+        </Link>
+        <Link 
+          to="/contact" 
+          className="transition-transform duration-300 hover:scale-105 hover:text-red-500"
+        >
+          Contactos
+        </Link>
       </nav>
     </header>
   );

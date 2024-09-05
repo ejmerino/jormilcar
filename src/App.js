@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Body from './components/Body';
+import Home from './components/Home';
 import Footer from './components/Footer';
 
 function App() {
@@ -10,10 +10,10 @@ function App() {
         <Header />
         <div className="flex-grow">
           <Routes>
-            <Route path="/" element={<Body />} />
-            <Route path="/about" element={<Body />} />
-            <Route path="/services" element={<Body />} />
-            <Route path="/contact" element={<Body />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<Home />} />
+            <Route path="/services" element={<Home />} />
+            <Route path="/contact" element={<Home />} />
           </Routes>
         </div>
         <Footer />
