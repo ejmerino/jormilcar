@@ -44,10 +44,17 @@ const Footer = () => {
               <i className="fas fa-phone-alt text-lg mr-3"></i>
               <span className="text-sm">(02) 296-3690</span>
             </div>
-            <div className="flex items-center mb-3">
-              <i className="fas fa-envelope text-lg mr-3"></i>
-              <span className="text-sm">jormilcar@hotmail.com</span>
+            <div className="flex items-center mb-3 group">
+              <i className="fas fa-envelope text-lg mr-3 group-hover:text-blue-400 transition-colors duration-300"></i>
+              <a 
+                href="mailto:jormilcar@hotmail.com" 
+                className="text-sm text-white group-hover:text-blue-400 transition-colors duration-300"
+              >
+                jormilcar@hotmail.com
+              </a>
             </div>
+
+
           </div>
         </div>
 
