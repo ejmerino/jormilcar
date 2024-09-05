@@ -56,9 +56,9 @@ const Header = () => {
         </Link>
       </nav>
 
-      {/* Menú hamburguesa desplegable en móviles */}
+      {/* Pestañas del menú hamburguesa en móviles */}
       <nav 
-        className={`absolute top-16 left-0 w-full bg-black p-4 rounded-lg shadow-lg z-50 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'} md:hidden`}
+        className={`absolute top-16 left-0 w-48 bg-black p-4 rounded-lg shadow-lg z-50 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'} md:hidden`}
       >
         <ul className="space-y-4">
           <li>
