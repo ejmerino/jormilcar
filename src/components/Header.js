@@ -23,8 +23,10 @@ const Header = () => {
 
       {/* Menú hamburguesa solo para móviles */}
       <div className="md:hidden">
-        <button onClick={toggleMenu} className="focus:outline-none">
-          <i className="fas fa-bars text-xl"></i>
+        <button onClick={toggleMenu} className="relative focus:outline-none">
+          <div className={`w-8 h-1 bg-white my-1 transition-transform duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></div>
+          <div className={`w-8 h-1 bg-white my-1 transition-opacity duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></div>
+          <div className={`w-8 h-1 bg-white my-1 transition-transform duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></div>
         </button>
       </div>
 
