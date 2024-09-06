@@ -78,7 +78,7 @@ const Header = () => {
 
         {/* Menú desplegable en móviles */}
         <nav 
-          className={`fixed top-0 right-0 w-64 bg-gray-900 p-4 transition-transform duration-500 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden z-50 h-full`}
+          className={`fixed top-0 right-0 w-64 bg-black p-4 transition-transform duration-500 ease-in-out transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden z-50 h-full`}
         >
           <div className="flex justify-end">
             <button 
