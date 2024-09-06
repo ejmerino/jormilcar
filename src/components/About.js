@@ -15,7 +15,7 @@ const About = () => {
         <div className="w-full md:w-1/2 flex flex-col items-center text-center md:pl-8">
           <h2 className="text-4xl font-bold text-red-500 mb-4">La Historia de Jormilcar</h2>
           <h3 className="text-2xl font-semibold mb-4 text-white">De una <span className="text-red-500">Idea</span> a una <span className="text-red-500">Gran Empresa</span></h3>
-          <img src={logoImg} alt="Logo Jormilcar" className="w-48 h-auto mb-8" />
+          <img src={logoImg} alt="Logo Jormilcar"  className="w-48 h-auto mb-8 transform transition-transform duration-300 hover:scale-110" />
           <p className="text-lg text-gray-300 text-left">
             Hace más de <strong>25 años</strong>, en el sur de Quito, nació una pequeña idea sin grandes pretensiones. Lo que comenzó como un simple hobby, una pasión por los autos, rápidamente se convirtió en una oportunidad de negocio para nuestro fundador. La compra y venta de autos, al principio solo como un pasatiempo, pronto tomó un giro inesperado.
             <br /><br />
