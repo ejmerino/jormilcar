@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jormilcar/static/css/main.7f85a38f.css",
-    "main.js": "/jormilcar/static/js/main.fc538028.js",
+    "main.css": "/jormilcar/static/css/main.6e9b2fdf.css",
+    "main.js": "/jormilcar/static/js/main.84605dad.js",
     "static/media/fa-solid-900.ttf": "/jormilcar/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/entrada.jpg": "/jormilcar/static/media/entrada.4e656d1233ab1db9193c.jpg",
     "static/media/fa-brands-400.ttf": "/jormilcar/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -15,11 +15,11 @@
     "static/media/fa-v4compatibility.ttf": "/jormilcar/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/jormilcar/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/jormilcar/index.html",
-    "main.7f85a38f.css.map": "/jormilcar/static/css/main.7f85a38f.css.map",
-    "main.fc538028.js.map": "/jormilcar/static/js/main.fc538028.js.map"
+    "main.6e9b2fdf.css.map": "/jormilcar/static/css/main.6e9b2fdf.css.map",
+    "main.84605dad.js.map": "/jormilcar/static/js/main.84605dad.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f85a38f.css",
-    "static/js/main.fc538028.js"
+    "static/css/main.6e9b2fdf.css",
+    "static/js/main.84605dad.js"
   ]
 }
