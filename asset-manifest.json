@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/jormilcar/static/css/main.51405114.css",
-    "main.js": "/jormilcar/static/js/main.c9e16354.js",
+    "main.css": "/jormilcar/static/css/main.2ec5b081.css",
+    "main.js": "/jormilcar/static/js/main.7bc8defa.js",
     "static/media/fa-solid-900.ttf": "/jormilcar/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/entrada.jpg": "/jormilcar/static/media/entrada.4e656d1233ab1db9193c.jpg",
     "static/media/fa-brands-400.ttf": "/jormilcar/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/jormilcar/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/fernandomolina.jpg": "/jormilcar/static/media/fernandomolina.d5133011ebc0a156d2ac.jpg",
+    "static/media/venta2.png": "/jormilcar/static/media/venta2.23fadd45b455796174ec.png",
     "static/media/fa-brands-400.woff2": "/jormilcar/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/Logo-Blanco.png": "/jormilcar/static/media/Logo-Blanco.0f582c50bc7e0f18433b.png",
+    "static/media/venta3.jpeg": "/jormilcar/static/media/venta3.ed47543e4386ca5adec8.jpeg",
     "static/media/fa-regular-400.ttf": "/jormilcar/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/venta1.jpg": "/jormilcar/static/media/venta1.9a019cce23b65a44409f.jpg",
     "static/media/fa-regular-400.woff2": "/jormilcar/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
     "static/media/entrada2.jpeg": "/jormilcar/static/media/entrada2.8f4c0f36597831500169.jpeg",
     "static/media/fa-v4compatibility.ttf": "/jormilcar/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/jormilcar/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/jormilcar/index.html",
-    "main.51405114.css.map": "/jormilcar/static/css/main.51405114.css.map",
-    "main.c9e16354.js.map": "/jormilcar/static/js/main.c9e16354.js.map"
+    "main.2ec5b081.css.map": "/jormilcar/static/css/main.2ec5b081.css.map",
+    "main.7bc8defa.js.map": "/jormilcar/static/js/main.7bc8defa.js.map"
   },
   "entrypoints": [
-    "static/css/main.51405114.css",
-    "static/js/main.c9e16354.js"
+    "static/css/main.2ec5b081.css",
+    "static/js/main.7bc8defa.js"
   ]
 }
