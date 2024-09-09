@@ -63,8 +63,8 @@ const Header = () => {
             ¿Quiénes somos?
           </Link>
           <Link 
-            to="/services" 
-            className={`transition-transform duration-300 hover:scale-105 hover:text-red-500 ${isActive('/services') ? 'text-red-500 font-bold' : ''}`}
+            to="/vender" 
+            className={`transition-transform duration-300 hover:scale-105 hover:text-red-500 ${isActive('/vender') ? 'text-red-500 font-bold' : ''}`}
           >
             Vender
           </Link>
@@ -109,8 +109,8 @@ const Header = () => {
             </li>
             <li className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
               <Link 
-                to="/services" 
-                className={`block text-center text-white text-lg transition-transform duration-300 hover:text-red-500 ${isActive('/services') ? 'text-red-500 font-bold' : ''}`}
+                to="/vender" 
+                className={`block text-center text-white text-lg transition-transform duration-300 hover:text-red-500 ${isActive('/vender') ? 'text-red-500 font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Vender
