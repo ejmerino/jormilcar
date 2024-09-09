@@ -5,6 +5,7 @@ const Footer = () => {
     <footer className="bg-black text-white p-8 font-roboto">
       <div className="container mx-auto flex flex-wrap justify-between items-start">
         {/* Información de Contacto */}
+        
         <div className="w-full md:w-1/3 mb-6 md:mb-0">
           <div className="flex flex-col">
             <a 
