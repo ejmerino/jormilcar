@@ -62,11 +62,19 @@ const Header = () => {
           >
             ¿Quiénes somos?
           </Link>
+
+          <Link 
+            to="/catalogo" 
+            className={`transition-transform duration-300 hover:scale-105 hover:text-red-500 ${isActive('/catalogo') ? 'text-red-500 font-bold' : ''}`}
+          >
+            Catálogo
+          </Link>
+
           <Link 
             to="/vender" 
             className={`transition-transform duration-300 hover:scale-105 hover:text-red-500 ${isActive('/vender') ? 'text-red-500 font-bold' : ''}`}
           >
-            Vender
+            Vender mi Auto
           </Link>
           <Link 
             to="/contact" 
@@ -107,13 +115,22 @@ const Header = () => {
                 ¿Quiénes somos?
               </Link>
             </li>
+            <li className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} delay-200`}>
+              <Link 
+                to="/catalogo" 
+                className={`block text-center text-white text-lg transition-transform duration-300 hover:text-red-500 ${isActive('/about') ? 'text-red-500 font-bold' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Catálogo
+              </Link>
+            </li>
             <li className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} delay-300`}>
               <Link 
                 to="/vender" 
                 className={`block text-center text-white text-lg transition-transform duration-300 hover:text-red-500 ${isActive('/vender') ? 'text-red-500 font-bold' : ''}`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Vender
+                Vender mi Auto
               </Link>
             </li>
             <li className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} delay-400`}>
