@@ -45,7 +45,6 @@ const Catalogo = () => {
   });
   const [orden, setOrden] = useState('precio-asc');
 
-  // Calcula los valores mínimos y máximos disponibles
   const aniosDisponibles = [...new Set(autos.map(auto => auto.anio))].sort((a, b) => a - b);
   const preciosDisponibles = autos.map(auto => auto.precio);
   const minPrecioDisponible = Math.min(...preciosDisponibles, Infinity);
@@ -153,19 +152,19 @@ const Catalogo = () => {
   };
 
   return (
-    <div className="flex gap-8 p-6">
+    <div className="flex flex-col lg:flex-row gap-8 p-6">
       {/* Filtros */}
-      <div className="w-80 bg-white p-6 rounded-lg shadow-md flex-shrink-0">
-        <h3 className="text-xl font-semibold mb-4">Filtros</h3>
+      <div className="lg:w-80 w-full bg-gray-100 p-6 rounded-lg shadow-md flex-shrink-0">
+        <h3 className="text-xl font-semibold mb-4 text-gray-700">Filtros</h3>
         <div className="space-y-4">
           {/* Marca */}
           <div className="flex flex-col space-y-2">
-            <label className="font-medium text-gray-700">Marca</label>
+            <label className="font-medium text-gray-600">Marca</label>
             <select
               name="marca"
               value={filtro.marca}
               onChange={handleFiltroChange}
-              className="border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
             >
               <option value="">Seleccionar Marca</option>
               {[...new Set(autos.map(auto => auto.marca))].map(marca => (
@@ -176,13 +175,13 @@ const Catalogo = () => {
 
           {/* Modelo */}
           <div className="flex flex-col space-y-2">
-            <label className="font-medium text-gray-700">Modelo</label>
+            <label className="font-medium text-gray-600">Modelo</label>
             <select
               name="modelo"
               value={filtro.modelo}
               onChange={handleFiltroChange}
               disabled={!filtro.marca}
-              className="border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
             >
               <option value="">Seleccionar Modelo</option>
               {[...new Set(autos.filter(auto => auto.marca === filtro.marca).map(auto => auto.modelo))].map(modelo => (
@@ -193,7 +192,7 @@ const Catalogo = () => {
 
           {/* Año desde - Año hasta */}
           <div className="flex flex-col space-y-2">
-            <label className="font-medium text-gray-700">Año</label>
+            <label className="font-medium text-gray-600">Año</label>
             <div className="flex flex-col space-y-2">
               <input
                 type="range"
@@ -201,7 +200,7 @@ const Catalogo = () => {
                 max={maxAnioDisponible}
                 value={filtro.anioDesde}
                 onChange={handleAnioDesdeChange}
-                className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
+                className="w-full h-2 bg-gray-300 rounded-lg cursor-pointer accent-blue-500"
               />
               <input
                 type="range"
@@ -209,10 +208,10 @@ const Catalogo = () => {
                 max={maxAnioDisponible}
                 value={filtro.anioHasta}
                 onChange={handleAnioHastaChange}
-                className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
+                className="w-full h-2 bg-gray-300 rounded-lg cursor-pointer accent-blue-500"
               />
             </div>
-            <div className="flex justify-between text-sm text-gray-600">
+            <div className="flex justify-between text-sm text-gray-500">
               <span>Desde: {filtro.anioDesde}</span>
               <span>Hasta: {filtro.anioHasta}</span>
             </div>
@@ -220,7 +219,7 @@ const Catalogo = () => {
 
           {/* Precio mínimo - Precio máximo */}
           <div className="flex flex-col space-y-2">
-            <label className="font-medium text-gray-700">Precio</label>
+            <label className="font-medium text-gray-600">Precio</label>
             <div className="flex flex-col space-y-2">
               <input
                 type="range"
@@ -228,7 +227,7 @@ const Catalogo = () => {
                 max={maxPrecioDisponible}
                 value={filtro.precioMin}
                 onChange={handlePrecioMinChange}
-                className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
+                className="w-full h-2 bg-gray-300 rounded-lg cursor-pointer accent-blue-500"
               />
               <input
                 type="range"
@@ -236,60 +235,55 @@ const Catalogo = () => {
                 max={maxPrecioDisponible}
                 value={filtro.precioMax}
                 onChange={handlePrecioMaxChange}
-                className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
+                className="w-full h-2 bg-gray-300 rounded-lg cursor-pointer accent-blue-500"
               />
             </div>
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>Desde: ${filtro.precioMin}</span>
-              <span>Hasta: ${filtro.precioMax}</span>
+            <div className="flex justify-between text-sm text-gray-500">
+              <span>Mín: ${filtro.precioMin}</span>
+              <span>Máx: ${filtro.precioMax}</span>
             </div>
           </div>
+          
+          {/* Orden */}
+          <div className="flex flex-col space-y-2">
+            <label className="font-medium text-gray-600">Ordenar por</label>
+            <select
+              value={orden}
+              onChange={handleOrdenChange}
+              className="border border-gray-300 p-3 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+            >
+              <option value="precio-asc">Precio: Menor a Mayor</option>
+              <option value="precio-desc">Precio: Mayor a Menor</option>
+              <option value="kms-asc">Kilometraje: Menor a Mayor</option>
+              <option value="kms-desc">Kilometraje: Mayor a Menor</option>
+            </select>
+          </div>
 
-          {/* Restablecer Filtros */}
           <button
             onClick={handleResetFilters}
-            className="bg-gray-300 text-gray-800 p-3 rounded-lg hover:bg-gray-400 w-full"
+            className="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-red-500"
           >
             Restablecer Filtros
           </button>
         </div>
       </div>
 
-      {/* Catálogo */}
-      <div className="flex-1">
-        <div className="flex justify-between mb-4">
-          <div className="flex items-center space-x-4">
-            <label className="font-medium text-gray-700">Ordenar por:</label>
-            <select
-              value={orden}
-              onChange={handleOrdenChange}
-              className="border border-gray-300 p-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+      {/* Autos */}
+      <div className="flex-grow">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {autosFiltrados.map(auto => (
+            <div
+              key={auto.id}
+              className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-200"
             >
-              <option value="precio-asc">Precio Ascendente</option>
-              <option value="precio-desc">Precio Descendente</option>
-              <option value="kms-asc">Kilómetros Ascendente</option>
-              <option value="kms-desc">Kilómetros Descendente</option>
-            </select>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          {autosFiltrados.length > 0 ? (
-            autosFiltrados.map(auto => (
-              <div key={auto.id} className="border border-gray-200 rounded-lg overflow-hidden shadow-md bg-white">
-                <img src={auto.foto} alt={auto.modelo} className="w-full h-48 object-cover" />
-                <div className="p-4">
-                  <h4 className="text-xl font-semibold text-gray-800">{auto.modelo}</h4>
-                  <p className="text-gray-600">Marca: {auto.marca}</p>
-                  <p className="text-gray-600">Año: {auto.anio}</p>
-                  <p className="text-gray-600">Precio: ${auto.precio}</p>
-                  <p className="text-gray-600">Kilómetros: {auto.kms}</p>
-                </div>
+              <img src={auto.foto} alt={`${auto.marca} ${auto.modelo}`} className="w-full h-48 object-cover rounded-md" />
+              <div className="mt-4 text-center">
+                <h3 className="text-lg font-semibold text-gray-700">{auto.marca} {auto.modelo}</h3>
+                <p className="text-sm text-gray-500">{auto.anio} • {auto.kms} km</p>
+                <p className="mt-2 text-lg font-bold text-blue-500">${auto.precio}</p>
               </div>
-            ))
-          ) : (
-            <p className="col-span-full text-center text-gray-600">No hay autos que coincidan con los filtros.</p>
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
