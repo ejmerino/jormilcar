@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jormilcar/static/css/main.002e6217.css",
-    "main.js": "/jormilcar/static/js/main.e130718a.js",
+    "main.css": "/jormilcar/static/css/main.84179b0a.css",
+    "main.js": "/jormilcar/static/js/main.161f6c90.js",
     "static/media/cx2020-rojo-1.jpg": "/jormilcar/static/media/cx2020-rojo-1.56e48c1c260acf814e21.jpg",
     "static/media/fa-solid-900.ttf": "/jormilcar/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/entrada.jpg": "/jormilcar/static/media/entrada.4e656d1233ab1db9193c.jpg",
@@ -19,11 +19,11 @@
     "static/media/fa-v4compatibility.ttf": "/jormilcar/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/jormilcar/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/jormilcar/index.html",
-    "main.002e6217.css.map": "/jormilcar/static/css/main.002e6217.css.map",
-    "main.e130718a.js.map": "/jormilcar/static/js/main.e130718a.js.map"
+    "main.84179b0a.css.map": "/jormilcar/static/css/main.84179b0a.css.map",
+    "main.161f6c90.js.map": "/jormilcar/static/js/main.161f6c90.js.map"
   },
   "entrypoints": [
-    "static/css/main.002e6217.css",
-    "static/js/main.e130718a.js"
+    "static/css/main.84179b0a.css",
+    "static/js/main.161f6c90.js"
   ]
 }
