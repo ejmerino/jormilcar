@@ -76,12 +76,7 @@ const Header = () => {
           >
             Vender mi Auto
           </Link>
-          <Link 
-            to="/contact" 
-            className={`transition-transform duration-300 hover:scale-105 hover:text-red-500 ${isActive('/contact') ? 'text-red-500 font-bold' : ''}`}
-          >
-            Contactos
-          </Link>
+          
         </nav>
 
         {/* Menú desplegable en móviles */}
@@ -133,15 +128,7 @@ const Header = () => {
                 Vender mi Auto
               </Link>
             </li>
-            <li className={`transition-opacity duration-300 ${isMenuOpen ? 'opacity-100' : 'opacity-0'} delay-400`}>
-              <Link 
-                to="/contact" 
-                className={`block text-center text-white text-lg transition-transform duration-300 hover:text-red-500 ${isActive('/contact') ? 'text-red-500 font-bold' : ''}`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Contactos
-              </Link>
-            </li>
+            
           </ul>
         </nav>
       </header>
